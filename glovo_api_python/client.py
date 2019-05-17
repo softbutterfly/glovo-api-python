@@ -69,10 +69,6 @@ class Client:
         url = "{}{}".format(self.base_url, path)
         response = getattr(self.session, method)(url, **options)
 
-        if 'estimate' in url:
-            print(response.status_code)
-            print(response.json())
-
         if HttpStatusCode.OK <= response.status_code < HttpStatusCode.REDIRECT:
             return {
                 'status': response.status_code,
