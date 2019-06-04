@@ -18,6 +18,7 @@ except IOError:
 exec(  # pylint: disable=W0122
     open(os.path.join(package_path, 'glovo_api_python', 'version.py')).read())
 VERSION = locals().get('VERSION', ['0', '0', '0'])
+__version__ = '.'.join(VERSION)
 
 setup(
     name=package_name,
@@ -30,12 +31,12 @@ setup(
         ]
     ),
     include_package_data=True,
-    version='.'.join(VERSION),
+    version=__version__,
     description="""Glovo API Python SDK""",
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='SoftButterfly Development Team',
-    author_email='martin.vuelta@softbutterfly.io',
+    author_email='SoftButterfly Development Team <dev@softbutterfly.io>',
     zip_safe=False,
     keywords=[
         'Softbutterfly',
@@ -53,8 +54,11 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     url=repositorty_url,
-    # download_url='%s/%s/archive/%s.tar.gz' % (
-    #     github_url, package_name, __version__, ),
+    download_url="%(url)s/-/archive/%(version)s/%(package)s-%(version)s.tar.gz" % {
+        "url": repositorty_url,
+        "version": __version__,
+        "package": package_name,
+    },
     requires=[
         'requests',
     ],
