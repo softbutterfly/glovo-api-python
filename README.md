@@ -214,7 +214,7 @@ print(tracking)
 # }
 ```
 
-### getcouriercontact
+### Get courier contact
 From [glovo docs](https://api-docs.glovoapp.com/b2b/index.html#getcouriercontact)
 
 ```python
@@ -231,7 +231,7 @@ print(courier_contact)
 # }
 ```
 
-### getorders
+### Get orders
 From [glovo docs](https://api-docs.glovoapp.com/b2b/index.html#getorders)
 
 ```python
