@@ -9,6 +9,8 @@ This package requires at least
 * requests 2.21.0
 * python 3.7
 
+This package was not tested with prior versions of these packages but it can works as well.
+
 ## Install
 
 You can install via pip. Run the following command:

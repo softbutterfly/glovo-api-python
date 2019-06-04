@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 package_name = 'glovo-api-python'
 package_path = os.path.abspath(os.path.dirname(__file__))
 repositorty_url = 'https://gitlab.com/softbutterfly/glovo-api-python'
-long_description_file_path = os.path.join(package_path, 'README.rst')
+long_description_file_path = os.path.join(package_path, 'README.md')
 long_description = ''
 
 try:
@@ -33,6 +33,7 @@ setup(
     version='.'.join(VERSION),
     description="""Glovo API Python SDK""",
     long_description=long_description,
+    long_description_content_type='text/markdown',
     author='SoftButterfly Development Team',
     author_email='martin.vuelta@softbutterfly.io',
     zip_safe=False,
