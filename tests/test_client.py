@@ -47,7 +47,7 @@ class ClientTest(unittest.TestCase):
         assert client.base_url == 'https://api.glovoapp.com'
 
     def test_client_auth_string(self):
-        client = Client(self.api_key, self.api_secret, stage=Stage.PRODUCTION)
+        client = Client(self.api_key, self.api_secret, stage=Stage.TEST)
 
         raw_auth_string = f'{self.api_key}:{self.api_secret}'.encode('utf-8')
         auth_string = b64encode(raw_auth_string).decode('utf-8')
@@ -55,7 +55,7 @@ class ClientTest(unittest.TestCase):
         assert client.auth_string == auth_string
 
     def test_client_headers(self):
-        client = Client(self.api_key, self.api_secret, stage=Stage.PRODUCTION)
+        client = Client(self.api_key, self.api_secret, stage=Stage.TEST)
 
         raw_auth_string = f'{self.api_key}:{self.api_secret}'.encode('utf-8')
         auth_string = b64encode(raw_auth_string).decode('utf-8')

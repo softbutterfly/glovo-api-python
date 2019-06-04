@@ -17,7 +17,9 @@ class WorkingAreasTest(unittest.TestCase):
         self.api_secret = os.environ.get('API_SECRET', 'sample_api_secret')
         self.version = __version__
         self.client = Client(self.api_key, self.api_secret)
-        # self.client.enable_test_mode()
+
+        if bool(os.environ.get('TEST', False)):
+            self.client.enable_test_mode()
 
     def test_working_area_attribute_type(self):
         working_area = getattr(self.client, 'working_area', None)

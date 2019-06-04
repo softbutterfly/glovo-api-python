@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 
 from glovo_api_python import __version__
 from glovo_api_python.client import Client
-from glovo_api_python.constants import Stage
 from glovo_api_python.resources import Order
 
 
@@ -23,7 +22,9 @@ class OrdersTest(unittest.TestCase):
         self.order_to_estimate = json.loads(self.order_to_estimate)
 
         self.client = Client(self.api_key, self.api_secret)
-        # self.client.enable_test_mode()
+
+        if bool(os.environ.get('TEST', False)):
+            self.client.enable_test_mode()
 
     def test_order_attribute_type(self):
         order = getattr(self.client, 'order', None)

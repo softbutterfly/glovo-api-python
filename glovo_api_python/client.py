@@ -80,10 +80,11 @@ class Client:
             code = ""
             json_response = response.json()
             if 'error' in json_response:
-                if 'description' in json_response['error']:
-                    msg = json_response['error']['description']
-                if 'code' in json_response['error']:
-                    code = str(json_response['error']['code'])
+                if isinstance(json_response['error'], str):
+                    msg = json_response['error']
+
+                if 'message' in json_response['error']:
+                    msg = json_response['error']['message']
 
             if str.upper(code) == ErrorCode.BAD_REQUEST_ERROR:
                 raise BadRequestError(msg)
