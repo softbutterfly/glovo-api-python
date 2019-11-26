@@ -9,6 +9,8 @@ pylint = "*"
 autopep8 = "*"
 twine = "*"
 python-dotenv = "*"
+pytest-cov = "*"
+coverage = "*"
 
 [packages]
 requests = "*"

@@ -10,7 +10,6 @@ class URL:
 
     WORKING_AREA = "/b2b/working-areas"
     ORDER = "/b2b/orders"
-
     INVOICE = "/invoices"
     PAYMENTS = "/payments"
     REFUNDS = "/refunds"
