@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.1 - Jan 19, 2020
+
+- Fix error with python version
+
 ## 1.0.0 - Jan 19, 2020
 
 - Update dev tooling
