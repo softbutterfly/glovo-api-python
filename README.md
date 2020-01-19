@@ -8,7 +8,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/1787644ed8524433b9466f74d24b44d2)](https://www.codacy.com/gh/softbutterfly/glovo-api-python?utm_source=github.com&utm_medium=referral&utm_content=softbutterfly/glovo-api-python&utm_campaign=Badge_Coverage)
 
 [![Stars](https://img.shields.io/github/stars/softbutterfly/glovo-api-python?logo=github)](https://github.com/softbutterfly/glovo-api-python/)
-[![License](https://img.shields.io/pypi/l/glovo-api-python.svg?color=blue)](https://github.com/softbutterfly/glovo-api-python/blob/master/LICENSE)
+[![License](https://img.shields.io/pypi/l/glovo-api-python.svg?color=blue)](https://github.com/softbutterfly/glovo-api-python/blob/master/LICENSE.txt)
 
 # Glovo Python Business API
 
