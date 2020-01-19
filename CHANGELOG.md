@@ -2,7 +2,7 @@
 
 ## 1.0.1 - Jan 19, 2020
 
-- Fix error with python version
+- Fix error with package version
 
 ## 1.0.0 - Jan 19, 2020
 
