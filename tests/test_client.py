@@ -7,8 +7,11 @@ from glovo_api_python.constants import Stage
 
 
 class ClientTest(unittest.TestCase):
-    api_key = "sample_api_key"
-    api_secret = "sample_api_secret"
+    # The following api credentials are not used in any security context.
+    # It is only used to generate a sample client for basic functionalitiy
+    # testing.
+    api_key = "sample_api_key"  # nosec
+    api_secret = "sample_api_secret"  # nosec
     version = __version__
 
     def test_client_default_production_stage(self):
