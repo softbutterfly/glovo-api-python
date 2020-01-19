@@ -1,12 +1,12 @@
 interactions:
 - request:
-    body: '{"description": "Recoger un cuaderno azul anillado propiedad de Sheyla
-      Bre\u00f1a", "addresses": [{"details": "Edificio Orbes, Piso 3, Oficina de Productos
-      Angel Bre\u00f1a", "contactPhone": null, "contactPerson": null, "lat": -12.0563673,
-      "lon": -76.9733736, "type": "PICKUP", "label": "Avenida los Cipreses, 140"},
-      {"details": "Oficina 511", "contactPhone": null, "contactPerson": null, "lat":
-      -12.055013, "lon": -77.03845849999999, "type": "DELIVERY", "label": "Avenida
-      Inca Garcilaso de la Vega, 1250"}], "scheduleTime": null}'
+    body: '{"scheduleTime": null, "addresses": [{"details": "Edificio Orbes, Piso
+      3, Oficina de Productos Angel Bre\u00f1a", "contactPerson": null, "label": "Avenida
+      los Cipreses, 140", "type": "PICKUP", "lat": -12.0563673, "contactPhone": null,
+      "lon": -76.9733736}, {"details": "Oficina 511", "contactPerson": null, "label":
+      "Avenida Inca Garcilaso de la Vega, 1250", "type": "DELIVERY", "lat": -12.055013,
+      "contactPhone": null, "lon": -77.03845849999999}], "description": "Recoger un
+      cuaderno azul anillado propiedad de Sheyla Bre\u00f1a"}'
     headers:
       Accept:
       - application/json
@@ -21,7 +21,7 @@ interactions:
       Content-type:
       - application/json
       User-Agent:
-      - Globo-API-Python/0.1.1
+      - Globo-API-Python/1.0.1
     method: POST
     uri: https://api.glovoapp.com/b2b/orders/estimate
   response:
@@ -35,7 +35,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf8
       Date:
-      - Sun, 19 Jan 2020 19:22:15 GMT
+      - Sun, 19 Jan 2020 22:07:39 GMT
       Server:
       - nginx
       Vary:

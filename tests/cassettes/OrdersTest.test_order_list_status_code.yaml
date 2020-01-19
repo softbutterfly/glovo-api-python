@@ -13,7 +13,7 @@ interactions:
       Content-type:
       - application/json
       User-Agent:
-      - Globo-API-Python/0.1.1
+      - Globo-API-Python/1.0.1
     method: GET
     uri: https://api.glovoapp.com/b2b/orders
   response:
@@ -195,7 +195,7 @@ interactions:
       Content-Type:
       - application/json; charset=utf8
       Date:
-      - Sun, 19 Jan 2020 19:22:16 GMT
+      - Sun, 19 Jan 2020 22:07:40 GMT
       Server:
       - nginx
       Vary:
