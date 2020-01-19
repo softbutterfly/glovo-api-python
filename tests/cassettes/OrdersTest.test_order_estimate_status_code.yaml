@@ -1,46 +1,47 @@
 interactions:
-- request:
-    body: '{"scheduleTime": null, "addresses": [{"details": "Edificio Orbes, Piso
-      3, Oficina de Productos Angel Bre\u00f1a", "contactPerson": null, "label": "Avenida
-      los Cipreses, 140", "type": "PICKUP", "lat": -12.0563673, "contactPhone": null,
-      "lon": -76.9733736}, {"details": "Oficina 511", "contactPerson": null, "label":
-      "Avenida Inca Garcilaso de la Vega, 1250", "type": "DELIVERY", "lat": -12.055013,
-      "contactPhone": null, "lon": -77.03845849999999}], "description": "Recoger un
-      cuaderno azul anillado propiedad de Sheyla Bre\u00f1a"}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '530'
-      Content-type:
-      - application/json
-      User-Agent:
-      - Globo-API-Python/1.0.1
-    method: POST
-    uri: https://api.glovoapp.com/b2b/orders/estimate
-  response:
-    body:
-      string: '{"total":{"amount":1530,"currency":"PEN"}}'
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '42'
-      Content-Type:
-      - application/json; charset=utf8
-      Date:
-      - Sun, 19 Jan 2020 22:07:39 GMT
-      Server:
-      - nginx
-      Vary:
-      - Origin
-    status:
-      code: 200
-      message: OK
+  - request:
+      body:
+        '{"scheduleTime": null, "addresses": [{"details": "Edificio Orbes, Piso
+        3, Oficina de Productos Angel Bre\u00f1a", "contactPerson": null, "label": "Avenida
+        los Cipreses, 140", "type": "PICKUP", "lat": -12.0563673, "contactPhone": null,
+        "lon": -76.9733736}, {"details": "Oficina 511", "contactPerson": null, "label":
+        "Avenida Inca Garcilaso de la Vega, 1250", "type": "DELIVERY", "lat": -12.055013,
+        "contactPhone": null, "lon": -77.03845849999999}], "description": "Recoger un
+        cuaderno azul anillado propiedad de Sheyla Bre\u00f1a"}'
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer glovo_api_key
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "530"
+        Content-type:
+          - application/json
+        User-Agent:
+          - Globo-API-Python/1.0.1
+      method: POST
+      uri: https://api.glovoapp.com/b2b/orders/estimate
+    response:
+      body:
+        string: '{"total":{"amount":1530,"currency":"PEN"}}'
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "42"
+        Content-Type:
+          - application/json; charset=utf8
+        Date:
+          - Sun, 19 Jan 2020 22:07:39 GMT
+        Server:
+          - nginx
+        Vary:
+          - Origin
+      status:
+        code: 200
+        message: OK
 version: 1

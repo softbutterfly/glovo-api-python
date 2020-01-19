@@ -1,46 +1,47 @@
 interactions:
-- request:
-    body: null
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      Authorization:
-      - Bearer culiq_api_key
-      Connection:
-      - keep-alive
-      Content-type:
-      - application/json
-      User-Agent:
-      - Globo-API-Python/1.0.1
-    method: GET
-    uri: https://api.glovoapp.com/b2b/orders/40304538
-  response:
-    body:
-      string: "{\"code\":\"LMHCYKMCR\",\"scheduleTime\":null,\"description\":\"Recoger\
-        \ un cuaderno azul anillado propiedad de Sheyla Bre\xF1a\",\"addresses\":[{\"\
-        lat\":-12.0563673,\"lon\":-76.9733736,\"type\":\"PICKUP\",\"label\":\"Avenida\
-        \ los Cipreses, 140\",\"details\":\"Edificio Orbes, Piso 3, Oficina de Productos\
-        \ Angel Bre\xF1a\",\"contactPhone\":null,\"contactPerson\":null,\"instructions\"\
-        :null},{\"lat\":-12.055013,\"lon\":-77.03845849999999,\"type\":\"DELIVERY\"\
-        ,\"label\":\"Avenida Inca Garcilaso de la Vega, 1250\",\"details\":\"Oficina\
-        \ 511\",\"contactPhone\":null,\"contactPerson\":null,\"instructions\":null}],\"\
-        id\":\"40304538\",\"state\":\"DELIVERED\",\"reference\":null}"
-    headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '602'
-      Content-Type:
-      - application/json; charset=utf8
-      Date:
-      - Sun, 19 Jan 2020 22:07:41 GMT
-      Server:
-      - nginx
-      Vary:
-      - Origin
-    status:
-      code: 200
-      message: OK
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/json
+        Accept-Encoding:
+          - gzip, deflate
+        Authorization:
+          - Bearer glovo_api_key
+        Connection:
+          - keep-alive
+        Content-type:
+          - application/json
+        User-Agent:
+          - Globo-API-Python/1.0.1
+      method: GET
+      uri: https://api.glovoapp.com/b2b/orders/40304538
+    response:
+      body:
+        string:
+          "{\"code\":\"LMHCYKMCR\",\"scheduleTime\":null,\"description\":\"Recoger\
+          \ un cuaderno azul anillado propiedad de Sheyla Bre\xF1a\",\"addresses\":[{\"\
+          lat\":-12.0563673,\"lon\":-76.9733736,\"type\":\"PICKUP\",\"label\":\"Avenida\
+          \ los Cipreses, 140\",\"details\":\"Edificio Orbes, Piso 3, Oficina de Productos\
+          \ Angel Bre\xF1a\",\"contactPhone\":null,\"contactPerson\":null,\"instructions\"\
+          :null},{\"lat\":-12.055013,\"lon\":-77.03845849999999,\"type\":\"DELIVERY\"\
+          ,\"label\":\"Avenida Inca Garcilaso de la Vega, 1250\",\"details\":\"Oficina\
+          \ 511\",\"contactPhone\":null,\"contactPerson\":null,\"instructions\":null}],\"\
+          id\":\"40304538\",\"state\":\"DELIVERED\",\"reference\":null}"
+      headers:
+        Connection:
+          - keep-alive
+        Content-Length:
+          - "602"
+        Content-Type:
+          - application/json; charset=utf8
+        Date:
+          - Sun, 19 Jan 2020 22:07:41 GMT
+        Server:
+          - nginx
+        Vary:
+          - Origin
+      status:
+        code: 200
+        message: OK
 version: 1

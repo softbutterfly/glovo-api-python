@@ -4,5 +4,5 @@ import pytest
 @pytest.fixture(scope="module")
 def vcr_config():
     return {
-        "filter_headers": [("Authorization", "Bearer culiq_api_key")],
+        "filter_headers": [("Authorization", "Bearer glovo_api_key")],
     }
