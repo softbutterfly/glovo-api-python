@@ -14,6 +14,12 @@ class ClientTest(unittest.TestCase):
     api_secret = "sample_api_secret"  # nosec
     version = __version__
 
+    def _get_auth_string(self):
+        raw_auth_string = "{0}:{1}".format(self.api_key, self.api_secret).encode(
+            "utf-8"
+        )
+        return b64encode(raw_auth_string).decode("utf-8")
+
     def test_client_default_production_stage(self):
         client = Client(self.api_key, self.api_secret)
 
@@ -50,21 +56,13 @@ class ClientTest(unittest.TestCase):
 
     def test_client_auth_string(self):
         client = Client(self.api_key, self.api_secret, stage=Stage.TEST)
-
-        raw_auth_string = "{0}:{1}".format(self.api_key, self.api_secret).encode(
-            "utf-8"
-        )
-        auth_string = b64encode(raw_auth_string).decode("utf-8")
-
+        auth_string = self._get_auth_string()
         assert client.auth_string == auth_string
 
     def test_client_headers(self):
         client = Client(self.api_key, self.api_secret, stage=Stage.TEST)
+        auth_string = self._get_auth_string()
 
-        raw_auth_string = "{0}:{1}".format(self.api_key, self.api_secret).encode(
-            "utf-8"
-        )
-        auth_string = b64encode(raw_auth_string).decode("utf-8")
         headers = {
             "User-Agent": "Globo-API-Python/{}".format(self.version),
             "Authorization": "Basic {}".format(auth_string),
