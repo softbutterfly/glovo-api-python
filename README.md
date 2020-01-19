@@ -16,7 +16,7 @@ This package was not tested with prior versions of these packages but it can wor
 You can install via pip. Run the following command:
 
 ```bash
-$ pip install glovo-api-python
+pip install glovo-api-python
 ```
 
 ## Credentials
