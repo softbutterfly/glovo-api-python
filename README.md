@@ -6,8 +6,8 @@ Create, retrieve and track your Glovo orders trough their Business API.
 
 This package requires at least
 
-* requests 2.21.0
-* python 3.7
+- requests 2.21.0
+- python 3.7
 
 This package was not tested with prior versions of these packages but it can works as well.
 
@@ -15,16 +15,16 @@ This package was not tested with prior versions of these packages but it can wor
 
 You can install via pip. Run the following command:
 
-```
+```bash
 $ pip install glovo-api-python
 ```
 
 ## Credentials
 
-Create an account in Glovo (it can be created from the App). This api **needs a credit card associated to your account**. You can add one from your app and it will be used automatically for any order. In order to get your API credentials you should login in the desired environment and go to *Credentials* section on your profile.
+Create an account in Glovo (it can be created from the App). This api **needs a credit card associated to your account**. You can add one from your app and it will be used automatically for any order. In order to get your API credentials you should login in the desired environment and go to _Credentials_ section on your profile.
 
-* [B2B Production](https://business.glovoapp.com/dashboard/profile)
-* [B2B Sandbox/Test](https://business.testglovo.com/dashboard/profile)
+- [B2B Production](https://business.glovoapp.com/dashboard/profile)
+- [B2B Sandbox/Test](https://business.testglovo.com/dashboard/profile)
 
 Example `ApiKey` & `ApiSecret`:
 
@@ -77,7 +77,6 @@ print(working_areas)
 # }
 ```
 
-
 ### Estimate order price
 
 From [glovo docs](https://api-docs.glovoapp.com/b2b/index.html#estimateorderprice)
@@ -125,6 +124,7 @@ print(estimates_order_price)
 ```
 
 ### Create order
+
 From [glovo docs](https://api-docs.glovoapp.com/b2b/index.html#createorder)
 
 ```python
@@ -175,6 +175,7 @@ print(placed_order)
 ```
 
 ### Retrieve order
+
 From [glovo docs](https://api-docs.glovoapp.com/b2b/index.html#retrieveorder)
 
 ```python
@@ -200,6 +201,7 @@ print(placed_order)
 ```
 
 ### Get order tracking
+
 From [glovo docs](https://api-docs.glovoapp.com/b2b/index.html#getordertracking)
 
 ```python
@@ -217,6 +219,7 @@ print(tracking)
 ```
 
 ### Get courier contact
+
 From [glovo docs](https://api-docs.glovoapp.com/b2b/index.html#getcouriercontact)
 
 ```python
@@ -234,6 +237,7 @@ print(courier_contact)
 ```
 
 ### Get orders
+
 From [glovo docs](https://api-docs.glovoapp.com/b2b/index.html#getorders)
 
 ```python
@@ -262,6 +266,7 @@ print(order_list)
 ```
 
 ### Cancel order
+
 From [glovo docs](https://api-docs.glovoapp.com/b2b/index.html#cancelorder)
 
 ```python

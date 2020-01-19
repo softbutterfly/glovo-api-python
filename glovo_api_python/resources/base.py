@@ -28,13 +28,13 @@ class Resource:
         return self._get(path, data, **options)
 
     def read(self, id_, data=None, **options):
-        path = f'{self.endpoint}/{id_}'
+        path = "{0}/{1}".format(self.endpoint, id_)
         return self._get(path, data, **options)
 
     def update(self, id_, data=None, **options):
-        path = f'{self.endpoint}/{id_}'
+        path = "{0}/{1}".format(self.endpoint, id_)
         return self._put(path, data, **options)
 
     def delete(self, id_, data=None, **options):
-        path = f'{self.endpoint}/{id_}'
+        path = "{0}/{1}".format(self.endpoint, id_)
         return self.delete(path, data, **options)

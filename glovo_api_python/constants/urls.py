@@ -3,8 +3,8 @@ from .stages import Stage
 
 class URL:
     PREFIX = {
-        Stage.PRODUCTION: 'api',
-        Stage.TEST: 'stageapi',
+        Stage.PRODUCTION: "api",
+        Stage.TEST: "stageapi",
     }
     BASE_FORMAT = "https://{prefix}.glovoapp.com"
 

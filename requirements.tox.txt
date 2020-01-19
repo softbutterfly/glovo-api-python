@@ -1,0 +1,7 @@
+requests<=2.22.0
+codecov<=2.0.15
+coverage<=5.0.3
+pytest<=5.3.3
+pytest-cov<=2.8.1
+pytest-vcr<=1.0.2
+python-dotenv<=0.10.4

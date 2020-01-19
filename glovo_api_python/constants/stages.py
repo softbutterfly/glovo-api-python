@@ -1,3 +1,3 @@
 class Stage:
-    PRODUCTION = 'production'
-    TEST = 'test'
+    PRODUCTION = "production"
+    TEST = "test"

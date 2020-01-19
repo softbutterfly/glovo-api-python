@@ -4,16 +4,20 @@ from typing import Any
 
 class AddressType:
     """Addresss type choices.
+
     PICKUP or DELIVERY depending on what the courier is expected to do at this
-    address."""
-    PICKUP = 'pickup'
-    DELIVERY = 'delivery'
+    address.
+    """
+
+    PICKUP = "pickup"
+    DELIVERY = "delivery"
 
 
 @dataclass
 class Address:
-    """Each of the points that are part of the order. Right now you can only
-    create two-point orders.
+    """Each of the points that are part of the order.
+
+    Right now you can only create two-point orders.
 
     FIELD           DESCRIPTION
     lat             Latitude of the address.
@@ -24,7 +28,8 @@ class Address:
     details         Floor / appartment (e.g. 2nd Floor or blue button of the
                     intercom). Optional.
     contactPhone    Phone of the sender / recipient at that address. Optional.
-    contactPerson   Name of the sender / recipient at that address. Optional."""
+    contactPerson   Name of the sender / recipient at that address. Optional.
+    """
 
     lat: float
     lon: float
@@ -36,23 +41,24 @@ class Address:
 
 
 class OrderType:
-    """State of the order
+    """State of the order.
 
     STATE           DESCRIPTION
     SCHEDULED       The order will be activated on scheduleTime.
     ACTIVE          The order is either being delivered or about to be.
     DELIVERED       The delivery has finished succesfully.
-    CANCELED        The order is canceled and it wont be delivered."""
+    CANCELED        The order is canceled and it wont be delivered.
+    """
 
-    SCHEDULED = 'scheduled'
-    ACTIVE = 'active'
-    DELIVERED = 'delivered'
-    CANCELED = 'canceled'
+    SCHEDULED = "scheduled"
+    ACTIVE = "active"
+    DELIVERED = "delivered"
+    CANCELED = "canceled"
 
 
 @dataclass
 class Order:
-    """Order
+    """Order.
 
     FIELD           DESCRIPTION
     id              Id of the order.
@@ -64,7 +70,8 @@ class Order:
                     order. Usually your orders will have one PICKUP address
                     and one DELIVERY address.
     state           Current state of the order (one of SCHEDULED, ACTIVE,
-                    DELIVERED, CANCELED)."""
+                    DELIVERED, CANCELED).
+    """
 
     id: str
     description: str
@@ -76,7 +83,7 @@ class Order:
 
 @dataclass
 class WorkingTime:
-    """WorkingTimes specify the activity hours of a WorkingArea,
+    """Working times specify the activity hours of a working area.
 
     FIELD           DESCRIPTION
     opening         Starting time of the active time range.
@@ -89,16 +96,19 @@ class WorkingTime:
 
 @dataclass
 class WorkingArea:
-    """The WorkingArea is the geographical space where Glovo can pick-up and
+    """Glovo working area.
+
+    The WorkingArea is the geographical space where Glovo can pick-up and
     deliver an order during certain hours of the day. Cross-WorkingArea orders
     are not supported.
 
     FIELD           DESCRIPTION
     code            Id of the delivery area(e.g. BCN, MAD, BUE).
-    polygons        List of encoded polylines where a package can be picked-up or delivered.
+    polygons        List of encoded polylines where a package can be picked-up
+                    or delivered.
     workingTime     WorkingTime during which this area is active.
-
     """
+
     code: str
     polygons: Any
     workingTime: WorkingTime
