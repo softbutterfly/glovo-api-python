@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/softbutterfly/glovo-api-python.svg?branch=master)](https://travis-ci.org/softbutterfly/glovo-api-python)
+[![codecov](https://codecov.io/gh/softbutterfly/glovo-api-python/branch/master/graph/badge.svg)](https://codecov.io/gh/softbutterfly/glovo-api-python)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1787644ed8524433b9466f74d24b44d2)](https://www.codacy.com/gh/softbutterfly/glovo-api-python?utm_source=github.com&utm_medium=referral&utm_content=softbutterfly/glovo-api-python&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/1787644ed8524433b9466f74d24b44d2)](https://www.codacy.com/gh/softbutterfly/glovo-api-python?utm_source=github.com&utm_medium=referral&utm_content=softbutterfly/glovo-api-python&utm_campaign=Badge_Coverage)
+
 # Glovo Python Business API
 
 Create, retrieve and track your Glovo orders trough their Business API.
