@@ -1011,7 +1011,7 @@ description = "Add .env support to your django/flask apps in development and dep
 name = "python-dotenv"
 optional = false
 python-versions = "*"
-version = "0.10.4"
+version = "0.10.5"
 
 [package.extras]
 cli = ["click (>=5.0)"]
@@ -1372,7 +1372,7 @@ idna = ">=2.0"
 multidict = ">=4.0"
 
 [metadata]
-content-hash = "725fab5d1d5d9c547264a7a80e72fda7c533eb4b6d492c526a490357ce59ca5a"
+content-hash = "4f2d518b002878fcdba15653efcc51f19f8f5f1824618c58919e20827412a150"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -1857,8 +1857,7 @@ python-dateutil = [
     {file = "python_dateutil-2.8.1-py2.py3-none-any.whl", hash = "sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a"},
 ]
 python-dotenv = [
-    {file = "python-dotenv-0.10.4.tar.gz", hash = "sha256:007f0bacef4093a7588c1ed0a3d746a59c04f9bac00f68aaa4e9c30c5fe9429b"},
-    {file = "python_dotenv-0.10.4-py2.py3-none-any.whl", hash = "sha256:26a252f7931a448a78d3322d69b60e193d847a02fb96260de1d7b37aadcd46b3"},
+    {file = "python-dotenv-0.10.5.tar.gz", hash = "sha256:f254bfd0c970d64ccbb6c9ebef3667ab301a71473569c991253a481f1c98dddc"},
 ]
 pywin32 = [
     {file = "pywin32-227-cp27-cp27m-win32.whl", hash = "sha256:371fcc39416d736401f0274dd64c2302728c9e034808e37381b5e1b22be4a6b0"},

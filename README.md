@@ -6,6 +6,7 @@
 [![codecov](https://codecov.io/gh/softbutterfly/glovo-api-python/branch/master/graph/badge.svg)](https://codecov.io/gh/softbutterfly/glovo-api-python)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/1787644ed8524433b9466f74d24b44d2)](https://www.codacy.com/gh/softbutterfly/glovo-api-python?utm_source=github.com&utm_medium=referral&utm_content=softbutterfly/glovo-api-python&utm_campaign=Badge_Grade)
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/1787644ed8524433b9466f74d24b44d2)](https://www.codacy.com/gh/softbutterfly/glovo-api-python?utm_source=github.com&utm_medium=referral&utm_content=softbutterfly/glovo-api-python&utm_campaign=Badge_Coverage)
+[![Requirements Status](https://requires.io/github/softbutterfly/glovo-api-python/requirements.svg?branch=master)](https://requires.io/github/softbutterfly/glovo-api-python/requirements/?branch=master)
 
 [![Stars](https://img.shields.io/github/stars/softbutterfly/glovo-api-python?logo=github)](https://github.com/softbutterfly/glovo-api-python/)
 [![License](https://img.shields.io/pypi/l/glovo-api-python.svg?color=blue)](https://github.com/softbutterfly/glovo-api-python/blob/master/LICENSE.txt)

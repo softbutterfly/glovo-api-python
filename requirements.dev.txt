@@ -394,9 +394,8 @@ pytest-vcr==1.0.2 \
 python-dateutil==2.8.1 \
     --hash=sha256:73ebfe9dbf22e832286dafa60473e4cd239f8592f699aa5adaf10050e6e1823c \
     --hash=sha256:75bb3f31ea686f1197762692a9ee6a7550b59fc6ca3a1f4b5d7e32fb98e2da2a
-python-dotenv==0.10.4 \
-    --hash=sha256:007f0bacef4093a7588c1ed0a3d746a59c04f9bac00f68aaa4e9c30c5fe9429b \
-    --hash=sha256:26a252f7931a448a78d3322d69b60e193d847a02fb96260de1d7b37aadcd46b3
+python-dotenv==0.10.5 \
+    --hash=sha256:f254bfd0c970d64ccbb6c9ebef3667ab301a71473569c991253a481f1c98dddc
 pywin32==227; sys_platform == "win32" \
     --hash=sha256:371fcc39416d736401f0274dd64c2302728c9e034808e37381b5e1b22be4a6b0 \
     --hash=sha256:4cdad3e84191194ea6d0dd1b1b9bdda574ff563177d2adf2b4efec2a244fa116 \
