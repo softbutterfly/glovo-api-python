@@ -34,3 +34,11 @@ repos:
       - id: bandit
         args: [-c, .bandit, -r, glovo_api_python]
         args: [-c, .bandit, -r, tests]
+
+  - repo: local
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
