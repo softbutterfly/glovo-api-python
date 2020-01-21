@@ -8,6 +8,7 @@
 !.python-version
 !.remarkrc
 !.travis.yml
+!.tox.ini
 *.py[cod]
 *.ipynb*
 *.egg*
