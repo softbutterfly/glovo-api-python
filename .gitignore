@@ -4,7 +4,7 @@
 !.gitignore
 !.isort.cfg
 !.pre-commit-config.yaml
-!.pylintrc
+!.pylintrc*
 !.python-version
 !.remarkrc
 !.travis.yml
