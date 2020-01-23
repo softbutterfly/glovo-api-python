@@ -42,4 +42,4 @@ repos:
         entry: pylint
         language: system
         types: [python]
-        args: [--rcfile, .local.pylintrc]
+        args: [--rcfile, .pylintrc.local]
