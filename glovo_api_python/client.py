@@ -9,6 +9,7 @@ from .constants import URL, Stage
 from .utils import capitalize_camel_case
 from .version import VERSION
 
+RESOURCE_PREFIX = "_resource_"
 RESOURCE_CLASSES = {}
 
 for name, module in resources.__dict__.items():
@@ -20,11 +21,11 @@ for name, module in resources.__dict__.items():
         RESOURCE_CLASSES[name] = module.__dict__[capitalized_name]
 
 
-class Client:
+class Glovo:
     base_url = None
 
     def __init__(self, api_key, api_secret, stage=Stage.PRODUCTION):
-        """Initialize a Client object with session.
+        """Initialize a Glovo client object with session.
 
         Also includes optional auth handler and options.
         """
@@ -38,7 +39,7 @@ class Client:
         self._set_base_url()
 
         for name, klass in RESOURCE_CLASSES.items():
-            setattr(self, name, klass(self))
+            setattr(self, RESOURCE_PREFIX + name, klass(self))
 
     @staticmethod
     def _get_version():
@@ -98,22 +99,36 @@ class Client:
         """Parse GET request options and dispatches a request."""
         return self.request("get", path, params=params, **options)
 
+    # PATCH method is never used on Glovo resources
+    # def patch(self, path, data, **options):
+    #     """Parse PATCH request options and dispatches a request."""
+    #     data, options = self._update_request(data, options)
+    #     return self.request("patch", path, data=data, **options)
+
     def post(self, path, data, **options):
         """Parse POST request options and dispatches a request."""
         data, options = self._update_request(data, options)
         return self.request("post", path, data=data, **options)
 
-    def patch(self, path, data, **options):
-        """Parse PATCH request options and dispatches a request."""
-        data, options = self._update_request(data, options)
-        return self.request("patch", path, data=data, **options)
+    # DELETE method is never used on Glovo resources
+    # def delete(self, path, data, **options):
+    #     """Parse DELETE request options and dispatches a request."""
+    #     data, options = self._update_request(data, options)
+    #     return self.request("delete", path, data=data, **options)
 
-    def delete(self, path, data, **options):
-        """Parse DELETE request options and dispatches a request."""
-        data, options = self._update_request(data, options)
-        return self.request("delete", path, data=data, **options)
+    # PUT method is never used on Glovo resources
+    # def put(self, path, data, **options):
+    #     """Parse PUT request options and dispatches a request."""
+    #     data, options = self._update_request(data, options)
+    #     return self.request("put", path, data=data, **options)
 
-    def put(self, path, data, **options):
-        """Parse PUT request options and dispatches a request."""
-        data, options = self._update_request(data, options)
-        return self.request("put", path, data=data, **options)
+    def __getattr__(self, name):
+        # This method will be called if the standar accesos for a property
+        # named `name` fails. I this situation if the propery name not start
+        # with `RESOURCE_PREFIX` ...
+        if not name.startswith(RESOURCE_PREFIX):
+            # ... we will try to get the prefixed version of the attribute
+            # name
+            return getattr(self, RESOURCE_PREFIX + name)
+
+        return super(Glovo, self).__getattribute__(name)

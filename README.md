@@ -53,12 +53,12 @@ Simple usage looks like:
 ### Initialize client
 
 ```python
-from glovo_api_python.client import Client
+from glovo_api_python.client import Glovo
 
 api_key = 'sample_api_key'
 api_secret = 'sample_api_secret'
 
-client = Client(api_key, api_secret)
+client = Glovo(api_key, api_secret)
 ```
 
 ### Get working areas
@@ -237,8 +237,8 @@ From [glovo docs](https://api-docs.glovoapp.com/b2b/index.html#getcouriercontact
 
 ```python
 order_id = 32678866
-courier_contact = client.order.courier_contact(order_id)
-print(courier_contact)
+glover_info = client.order.glover_info(order_id)
+print(glover_info)
 # Will show this
 # {
 #     "status": 200,
@@ -285,7 +285,7 @@ From [glovo docs](https://api-docs.glovoapp.com/b2b/index.html#cancelorder)
 ```python
 order_id = 32678866
 canceled_order = client.order.cancel(order_id)
-print(courier_contact)
+print(glover_info)
 # Will show this
 # {
 #     status: 200,

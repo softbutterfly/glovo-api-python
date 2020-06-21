@@ -13,7 +13,7 @@ class Order(Resource):
         path = "{0}/{1}/tracking".format(self.endpoint, id_)
         return self._get(path, data, **options)
 
-    def courier_contact(self, id_, data=None, **options):
+    def glover_info(self, id_, data=None, **options):
         path = "{0}/{1}/courier-contact".format(self.endpoint, id_)
         return self._get(path, data, **options)
 

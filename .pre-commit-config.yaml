@@ -33,6 +33,11 @@ repos:
     hooks:
       - id: bandit
         args: [-c, .bandit, -r, glovo_api_python]
+
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.6.2
+    hooks:
+      - id: bandit
         args: [-c, .bandit, -r, tests]
 
   - repo: local

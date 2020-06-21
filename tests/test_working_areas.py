@@ -5,7 +5,7 @@ import pytest
 from dotenv import load_dotenv
 
 from glovo_api_python import __version__
-from glovo_api_python.client import Client
+from glovo_api_python.client import Glovo
 from glovo_api_python.resources import WorkingArea
 
 
@@ -16,7 +16,7 @@ class WorkingAreasTest(unittest.TestCase):
         self.api_key = os.environ.get("API_KEY", "sample_api_key")
         self.api_secret = os.environ.get("API_SECRET", "sample_api_secret")
         self.version = __version__
-        self.client = Client(self.api_key, self.api_secret)
+        self.client = Glovo(self.api_key, self.api_secret)
         self.working_area = WorkingArea(client=self.client)
 
         if bool(os.environ.get("TEST", False)):
