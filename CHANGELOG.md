@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## 2.0.0 - Jun 20, 2020
+
+- Rename Client to Glovo for a better developer experience
+- Fix incompatibility with pylint 'no-member'
+- Update dependencies to remove the insecure ones
+- Remove unused functions
+- Increase coverage
+
 ## 1.0.1 - Jan 19, 2020
 
 - Fix error with package version

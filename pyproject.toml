@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "glovo-api-python"
-version = "1.0.1"
+version = "2.0.0"
 description = ""
 authors = ["SoftButterfly Development Team <dev@softbutterfly.io>"]
 license = "BSD 3-Clause License"
