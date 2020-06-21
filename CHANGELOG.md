@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.1 - Jun 20, 2020
+
+- Update build config for Poetry.
+
 ## 2.0.0 - Jun 20, 2020
 
 - Rename Client to Glovo for a better developer experience

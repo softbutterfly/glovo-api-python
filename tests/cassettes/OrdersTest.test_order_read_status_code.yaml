@@ -13,7 +13,7 @@ interactions:
         Content-type:
           - application/json
         User-Agent:
-          - Globo-API-Python/2.0.0
+          - Globo-API-Python/2.0.1
       method: GET
       uri: https://api.glovoapp.com/b2b/orders/40304538
     response:
