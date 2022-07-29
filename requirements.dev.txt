@@ -48,7 +48,7 @@ keyring==21.2.1
 lazy-object-proxy==1.4.3
 markupsafe==1.1.1
 mccabe==0.6.1
-mistune==0.8.4
+mistune==2.0.3
 more-itertools==8.4.0
 multidict==4.7.6; python_version >= "3.6"
 mypy==0.761
